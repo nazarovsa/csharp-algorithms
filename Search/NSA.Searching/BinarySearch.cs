@@ -13,7 +13,7 @@ namespace NSA.Searching
             if (right >= left)
             {
                 var median = left + (right - left) / 2;
-                if (source[median].Equals(target))
+                if (comparer.Compare(source[median], target) == 0)
                     return median;
 
                 if (comparer.Compare(source[median], target) < 0)
