@@ -9,7 +9,7 @@ namespace SearchTests
         [Fact]
         public void Should_return_minus_one_if_not_found()
         {
-            // Prepare
+            // Arrange
             var array = new[] {1, 2, 3, 4, 5};
 
             // Act
@@ -22,7 +22,7 @@ namespace SearchTests
         [Fact]
         public void Should_return_index_of_founded_element()
         {
-            // Prepare
+            // Arrange
             var array = new[] {1, 2, 3, 4, 5};
 
             // Act

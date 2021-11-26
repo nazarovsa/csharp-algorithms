@@ -11,14 +11,17 @@ namespace NSA.DataStructures
         private ListNode<T> _tail;
 
         private int _count;
+        
+        private readonly IComparer<T> _comparer;
 
         public int Count => _count;
 
-        public LinkedList()
+        public LinkedList(IComparer<T> comparer = null)
         {
+            _comparer = comparer ?? Comparer<T>.Default;
         }
 
-        public LinkedList(ListNode<T> head)
+        public LinkedList(ListNode<T> head, IComparer<T> comparer = null) : this(comparer)
         {
             _head = head ?? throw new ArgumentNullException(nameof(head));
             _tail = head;
@@ -51,6 +54,20 @@ namespace NSA.DataStructures
             _count++;
         }
 
+        public int PositionOf(T item)
+        {
+            var position = 1;
+            foreach (var node in this)
+            {
+                if (_comparer.Compare(node.Value, item) == 0)
+                    return position;
+                
+                position++;
+            }
+
+            return -1;
+        }
+        
         public ListNode<T> GetAt(int position)
         {
             if (position == 1)
