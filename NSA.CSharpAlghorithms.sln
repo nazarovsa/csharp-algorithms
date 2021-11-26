@@ -13,6 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{80278B9A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSA.Searching.Tests", "_Tests\NSA.Searching.Tests\NSA.Searching.Tests.csproj", "{7CC98199-4AC8-429D-B07C-80FD189A0304}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{9F27B263-EA93-4958-91C8-2FCA08942F9E}"
+ProjectSection(SolutionItems) = preProject
+	DataStructures\README.md = DataStructures\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSA.DataStructures", "DataStructures\NSA.DataStructures\NSA.DataStructures.csproj", "{596010FB-9092-4268-8334-3BDA88A571E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSA.DataStructures.Tests", "_Tests\NSA.DataStructures.Tests\NSA.DataStructures.Tests.csproj", "{2BB1D024-2518-4EBC-8CF7-792E359D5933}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +36,19 @@ Global
 		{7CC98199-4AC8-429D-B07C-80FD189A0304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC98199-4AC8-429D-B07C-80FD189A0304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC98199-4AC8-429D-B07C-80FD189A0304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596010FB-9092-4268-8334-3BDA88A571E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596010FB-9092-4268-8334-3BDA88A571E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596010FB-9092-4268-8334-3BDA88A571E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596010FB-9092-4268-8334-3BDA88A571E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB1D024-2518-4EBC-8CF7-792E359D5933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB1D024-2518-4EBC-8CF7-792E359D5933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB1D024-2518-4EBC-8CF7-792E359D5933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB1D024-2518-4EBC-8CF7-792E359D5933}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{997F13FA-06A7-4706-A3E9-D87A336BCA5E} = {264E2069-87D1-4EAA-9B5F-8E940EEB5F20}
 		{7CC98199-4AC8-429D-B07C-80FD189A0304} = {80278B9A-76E2-4092-9B74-A5F264125FB7}
+		{596010FB-9092-4268-8334-3BDA88A571E6} = {9F27B263-EA93-4958-91C8-2FCA08942F9E}
+		{2BB1D024-2518-4EBC-8CF7-792E359D5933} = {80278B9A-76E2-4092-9B74-A5F264125FB7}
 	EndGlobalSection
 EndGlobal
