@@ -51,12 +51,6 @@ namespace NSA.DataStructures
             _count++;
         }
 
-        private void AddIfEmpty(ListNode<T> node)
-        {
-            _head = node;
-            _tail = node;
-        }
-
         public ListNode<T> GetAt(int position)
         {
             if (position == 1)
@@ -111,6 +105,12 @@ namespace NSA.DataStructures
             head.Next = null;
 
             return current;
+        }
+
+        private void AddIfEmpty(ListNode<T> node)
+        {
+            _head = node;
+            _tail = node;
         }
 
         public IEnumerator<ListNode<T>> GetEnumerator()
