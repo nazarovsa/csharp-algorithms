@@ -10,6 +10,7 @@ namespace NSA.Searching
         /// <summary>
         /// Rabin-Karp searching algorithm implementation.
         /// </summary>
+        /// <remarks>https://en.wikipedia.org/wiki/Rabin-Karp_algorithm</remarks>
         /// <param name="input">Input string. Should contain only a-z characters.</param>
         /// <param name="pattern">Pattern of searching substring. Should contain only a-z characters.</param>
         /// <param name="baseOfNumeralSystem">Base of a numeral system..</param>
